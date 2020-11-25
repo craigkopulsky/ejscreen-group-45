@@ -33,3 +33,7 @@ ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
 
 ```
 
+From this graph, it appears that census tracts with a greater proportion of white people tend to receive lower Enviroscreen Scores. This means that those census tracts are less polluted.
+
+
+
