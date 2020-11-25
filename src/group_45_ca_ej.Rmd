@@ -12,6 +12,7 @@ library(janitor)
 library(here)
 ```
 
+Reading in data and cleaning variable names
 
 ```{r}
 ces <- read.csv(here("data", "ces3demographics.csv")) %>% 
@@ -23,7 +24,9 @@ Basic scatterplot
 ```{r}
 
 ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
-  geom_point()
+  geom_hex() + # chart type geom_hex
+  labs(x = "% White", # updating axis labels
+       y = "CalEnviroScreen 3.0 Score")
 
 ```
 
