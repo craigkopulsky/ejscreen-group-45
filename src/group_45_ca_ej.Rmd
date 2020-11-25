@@ -1,0 +1,20 @@
+---
+title: "Group 45 CA pollution burden"
+author: "Craig Kopulsky and Jacob Weverka"
+date: "11/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+
+```{r}
+ces <- read.csv(here("data", "ces3demographics.csv")) %>% 
+  janitor::clean_names()
+```
+
