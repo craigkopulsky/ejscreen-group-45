@@ -26,8 +26,9 @@ Basic scatterplot
 ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
   geom_hex() + # chart type geom_hex
   labs(x = "% White", # updating axis labels
-       y = "CalEnviroScreen 3.0 Score") +
-  scale_fill_gradient(low = "yellow", high = "purple") +
+       y = "CalEnviroScreen 3.0 Score",
+       title = "CalEnviroScreen 3.0 Score for California Census Tracts \nby % of Population that is White") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 
 ```
