@@ -18,3 +18,12 @@ ces <- read.csv(here("data", "ces3demographics.csv")) %>%
   janitor::clean_names()
 ```
 
+Basic scatterplot
+
+```{r}
+
+ggplot(data = ces, aes(x = white, y = ces_3_0_score)) +
+  geom_point()
+
+```
+
